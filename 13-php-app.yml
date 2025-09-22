@@ -1,0 +1,11 @@
+---
+- name: PHP app deployment
+  hosts: g1
+  become: yes
+  tasks:
+    - name: Install php and modules
+      package:
+        name:
+          - php
+          - php-mysql
+        state: present

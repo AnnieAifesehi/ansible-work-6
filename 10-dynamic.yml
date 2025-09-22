@@ -1,0 +1,9 @@
+---
+- name: Deploy dynamic template
+  hosts: g1
+  become: yes
+  tasks:
+    - name: Render dynamic page from template
+      template:
+        src: dynamic.j2
+        dest: /var/www/html/dynamic.html

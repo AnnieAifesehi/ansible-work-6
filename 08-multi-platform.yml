@@ -1,0 +1,7 @@
+---
+- name: Multi-platform demo
+  hosts: all
+  tasks:
+    - name: Gather OS family
+      debug:
+        msg: "{{ ansible_facts['os_family'] }} on {{ inventory_hostname }}"

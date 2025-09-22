@@ -1,0 +1,10 @@
+---
+- name: Deploy static site files
+  hosts: g1
+  become: yes
+  tasks:
+    - name: Copy static.html to web root
+      copy:
+        src: static.html
+        dest: /var/www/html/static.html
+        mode: '0644'

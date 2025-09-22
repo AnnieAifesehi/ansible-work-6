@@ -1,0 +1,7 @@
+---
+- name: Angular app placeholder
+  hosts: g1
+  tasks:
+    - name: Display angular build hint
+      debug:
+        msg: "Place built Angular dist into /var/www/angular on {{ inventory_hostname }}"

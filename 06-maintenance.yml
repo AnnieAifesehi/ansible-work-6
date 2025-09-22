@@ -1,0 +1,9 @@
+---
+- name: Maintenance tasks - example
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create maintenance flag file
+      file:
+        path: /tmp/maintenance.flag
+        state: touch

@@ -1,0 +1,10 @@
+---
+- name: Simple HTML app deploy
+  hosts: g1
+  become: yes
+  tasks:
+    - name: Copy Maintenance.html to web root
+      copy:
+        src: Maintenance.html
+        dest: /var/www/html/Maintenance.html
+        mode: '0644'

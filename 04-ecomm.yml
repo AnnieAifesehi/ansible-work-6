@@ -1,0 +1,13 @@
+---
+- name: E-commerce app deployment (example)
+  hosts: g1
+  become: yes
+  vars:
+    app_dir: /opt/ecomm
+  tasks:
+    - name: Create application directory
+      file:
+        path: "{{ app_dir }}"
+        state: directory
+        owner: root
+        mode: '0755'

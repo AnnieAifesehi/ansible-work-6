@@ -1,0 +1,9 @@
+---
+- name: Play with vars
+  hosts: g1
+  vars:
+    greeting: "Hello from Ansible"
+  tasks:
+    - name: Show greeting
+      debug:
+        msg: "{{ greeting }} on {{ inventory_hostname }}"

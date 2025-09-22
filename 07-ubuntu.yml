@@ -1,0 +1,8 @@
+---
+- name: Ubuntu specific tasks
+  hosts: g1
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
