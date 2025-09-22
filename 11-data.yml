@@ -1,5 +1,5 @@
 ---
-- name: Play with vars
+- name: Play with data
   hosts: g1
   vars:
     greeting: "Hello from Ansible"

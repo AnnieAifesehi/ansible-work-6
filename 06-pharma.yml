@@ -1,9 +1,9 @@
 ---
-- name: Maintenance tasks - example
+- name: pharma - example
   hosts: all
   become: yes
   tasks:
-    - name: Create maintenance flag file
+    - name: Create pharma flag file
       file:
-        path: /tmp/maintenance.flag
+        path: /tmp/pharma.flag
         state: touch
