@@ -1,0 +1,7 @@
+---
+- name: shein app - sample playbook
+  hosts: g1
+  tasks:
+    - name: Print shein app message
+      debug:
+        msg: "Deploying shein app to {{ inventory_hostname }}"

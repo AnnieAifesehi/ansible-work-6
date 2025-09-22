@@ -1,7 +1,0 @@
----
-- name: Food app - sample playbook
-  hosts: g1
-  tasks:
-    - name: Print food app message
-      debug:
-        msg: "Deploying food app to {{ inventory_hostname }}"
